@@ -23,7 +23,7 @@ const externalLinks = [
     download: 'Gabe_Scoggin_Resume.pdf',
   },
   {
-    href: 'https://github.com/gabescoggin',
+    href: 'https://github.com/gscoggin',
     icon: Github,
     label: 'GitHub',
     external: true,

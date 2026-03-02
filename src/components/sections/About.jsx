@@ -16,9 +16,10 @@ const About = () => {
           <div className="relative">
             <div className="absolute -inset-1 bg-gradient-to-br from-amber-accent/25 to-amber-accent/5 rounded-2xl blur-sm" />
             <img
-              src="/images/profile-photo.jpg"
+              src="/images/profile-photo.JPG"
               alt="Gabe Scoggin"
               className="relative w-64 h-64 md:w-72 md:h-72 rounded-2xl object-cover border border-border"
+              style={{ objectPosition: 'center 20%' }}
               loading="lazy"
             />
           </div>

@@ -21,7 +21,7 @@ export const experience = [
     programs: ["Pulse App", "TPM Practice"],
   },
   {
-    title: "Senior Staff Technical Program Manager",
+    title: "Senior Manager, Technical Program Management",
     company: "Google Ads - Ads Safety",
     date: "2019 - 2023",
     logo: "/images/Google_Ads.jpg",
@@ -48,12 +48,17 @@ export const experience = [
     logoAlt: "Google Ads logo",
     companyUrl: "https://ads.google.com",
     description:
-      "Founding TPM for Google Ads' first integrated Ads Integrity team. Led transition from legacy systems to scalable, ML-first enforcement across 80+ ad product areas. Scaled TPM team from 1 to 15 members.",
+      "Founding TPM for Google Ads’ first integrated Ads Integrity organization — uniting Product, Engineering, and Trust & Safety to strengthen policy enforcement, transparency, and customer trust across the global Ads ecosystem.",
     achievements: [
-      "Successfully migrated 80+ ad products to ML-based enforcement in 4 years",
-      "Enabled 20%+ annual business growth while maintaining safety standards",
-      "Designed hybrid ML + human review workflows improving enforcement precision",
-      "Established shared OKRs and launch tracking across previously siloed groups",
+     "Pioneered ML-based ads enforcement at Google when the approach was nascent — leading the deprecation and full rebuild of a 10-year-old mission-critical system in the critical path of every ad Google serves, without disrupting a multi-billion dollar revenue stream",
+     "Migrated 80+ ad products from manual, rule-based logic to scalable ML-first systems, reducing human operations costs by $30M annually while enabling the Ads business to scale 4x operations costs by $30M annually while enabling the Ads business to scale 4x",
+     "Sustained 20%+ annual business growth throughout the enforcement transformation while reducing manual policy interventions by 60%",
+     "Designed hybrid ML + human-review workflows for edge-case scenarios, maintaining enforcement precision at scale while cutting manual review burden by 90%",
+     "Directed ground truth data and policy automation programs that accelerated ML model development by 20%",
+     "and improved enforcement precision across 7 product areas (text ads, image ads, videos ads)",
+     "Orchestrated cross-functional alignment across Trust & Safety Ops, Legal, PR, Marketing, and Product to synchronize policy, enforcement, and product roadmaps",
+     "Developed policy certification and transparency frameworks for sensitive verticals and regulated industries, enabling compliant scaling into 12 new verticals.",
+     "Founded and scaled the Ads Integrity TPM function from 1 to 10, owning hiring, mentorship, and delivery during a period of rapid org expansion"
     ],
     programs: ["Ads Integrity", "Policy Enforcement"],
   },
@@ -65,12 +70,15 @@ export const experience = [
     logoAlt: "Google Maps logo",
     companyUrl: "https://maps.google.com",
     description:
-      "Founding Program Manager for Google's Ground Truth initiative. Built global mapping operations across 40+ countries, establishing quality frameworks and scaling operations for Google's mapping services.",
+      "Founding TPM for Google’s Ground Truth initiative — the R&D and operational platform behind Google Maps’ global accuracy and detail. Built and scaled an end-to-end mapping pipeline integrating imagery, sensor data, and publicdatasets into structured, routable, and semantically rich map data.",
     achievements: [
-      "Scaled Ground Truth operations to 40+ countries, enabling global mapping coverage",
-      "Created quality frameworks for mapping accuracy and data integrity standards",
-      "Built cross-functional partnerships with government agencies and data providers",
-      "Pioneered automated quality metrics enabling real-time mapping data validation",
+      "Led development of Ground Truth’s global mapping stages, unifying sub-meter imagery, mobile data signals, and public datasets into high-fidelity, routable map data.",
+      "Delivered coverage across 45 countries in four years, replacing TeleAtlas and TomTom data — saving $300M annually in licensing costs and unlocking new navigation, local search, and transit products.",
+      "Drove cross-functional technical collaboration across Engineering, Maps Client, and Operations to develop datasets supporting turn-by-turn routing, transit, and bike navigation.",
+      "Scaled global data operations by establishing teams in Seattle (250 operators), Hyderabad (2,500 operators) and Tokyo (47 operators), enabling 24/7 map production at scale.",
+      "Launched support for advanced geospatial datasets including flood zones, crime data, school quality, wildlife migration, and disaster risk history (fires, earthquakes, volcanoes)",
+      "Onboarded and managed external data partners, leading both technical integrations and commercial licensing negotiations to expand global coverage.",
+      "Partnered with NGOs and global agencies to validate product-market fit, expand dataset coverage, and promote open-data standards—representing Google at the UN Geospatial Data Governance Conference."
     ],
     programs: ["Ground Truth", "Google Maps"],
   },

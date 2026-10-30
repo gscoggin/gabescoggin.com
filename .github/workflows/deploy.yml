@@ -1,0 +1,56 @@
+name: Deploy
+
+on:
+  push:
+    branches: [main, dev]
+
+concurrency:
+  group: deploy-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+
+      - run: npm ci
+
+      - run: npx eslint src
+
+      - run: npm run build
+
+      - name: Set deploy target
+        id: target
+        run: |
+          if [ "${{ github.ref_name }}" = "main" ]; then
+            echo "path=~/public_html/" >> "$GITHUB_OUTPUT"
+            echo "extra=--exclude=dev" >> "$GITHUB_OUTPUT"
+          else
+            echo "path=~/public_html/dev/" >> "$GITHUB_OUTPUT"
+            echo "extra=" >> "$GITHUB_OUTPUT"
+          fi
+
+      - name: Set up SSH
+        run: |
+          mkdir -p ~/.ssh
+          printf '%s\n' "${{ secrets.DEPLOY_SSH_KEY }}" > ~/.ssh/deploy_key
+          chmod 600 ~/.ssh/deploy_key
+          ssh-keyscan -p 2222 gabescoggin.com >> ~/.ssh/known_hosts
+
+      - name: Deploy
+        run: |
+          rsync -avz --delete \
+            --exclude='.well-known' \
+            --exclude='cgi-bin' \
+            --exclude='ripleyscoggin' \
+            --exclude='.DS_Store' \
+            ${{ steps.target.outputs.extra }} \
+            -e "ssh -i ~/.ssh/deploy_key -p 2222" \
+            ./dist/ \
+            gabescog@gabescoggin.com:${{ steps.target.outputs.path }}

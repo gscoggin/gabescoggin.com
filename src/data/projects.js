@@ -2,8 +2,8 @@ export const projects = [
   {
     title: "Personal Portfolio Site",
     description:
-      "Designed and built this portfolio from scratch using React, Tailwind CSS, and Framer Motion. Dark-mode-first design with scroll-triggered animations and fully responsive layout.",
-    tech: ["React", "Tailwind CSS", "Framer Motion", "Vite"],
+      "Designed and built this portfolio from scratch using React and Tailwind CSS. Warm, editorial design with a focus on typography, whitespace, and a fully responsive layout.",
+    tech: ["React", "Tailwind CSS", "Vite"],
     github: "https://github.com/gscoggin/gabescoggin.com",
   },
   {

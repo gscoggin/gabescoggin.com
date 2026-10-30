@@ -5,24 +5,21 @@ import { personal } from '../../data/personal';
 
 const About = () => {
   return (
-    <Section id="about">
-      <h2 className="font-heading font-bold text-3xl md:text-4xl text-heading-warm text-center mb-16">
+    <Section id="about" dark>
+      <h2 className="font-heading font-medium text-3xl md:text-4xl text-ink mb-16">
         About
       </h2>
 
       <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
         {/* Photo */}
         <MistFade className="flex justify-center">
-          <div className="relative">
-            <div className="absolute -inset-1 bg-gradient-to-br from-amber-accent/25 to-amber-accent/5 rounded-2xl blur-sm" />
-            <img
-              src="/images/profile-photo.JPG"
-              alt="Gabe Scoggin"
-              className="relative w-64 h-64 md:w-72 md:h-72 rounded-2xl object-cover border border-border"
-              style={{ objectPosition: 'center 20%' }}
-              loading="lazy"
-            />
-          </div>
+          <img
+            src="/images/profile-photo.JPG"
+            alt="Gabe Scoggin"
+            className="w-64 h-64 md:w-72 md:h-72 rounded-2xl object-cover border border-border shadow-sm shadow-ink/5"
+            style={{ objectPosition: 'center 20%' }}
+            loading="lazy"
+          />
         </MistFade>
 
         {/* Bio */}
@@ -45,7 +42,7 @@ const About = () => {
               {personal.education.map((edu, i) => (
                 <div key={i} className="flex items-baseline justify-between gap-4">
                   <div>
-                    <span className="text-text-primary text-sm font-medium">
+                    <span className="text-ink text-sm font-medium">
                       {edu.program}
                     </span>
                     <span className="text-text-muted text-sm"> &mdash; {edu.institution}</span>

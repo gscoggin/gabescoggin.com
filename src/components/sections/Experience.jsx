@@ -5,8 +5,8 @@ import { experience } from '../../data/experience';
 
 const Experience = () => {
   return (
-    <Section id="experience" dark>
-      <h2 className="font-heading font-bold text-3xl md:text-4xl text-heading-warm text-center mb-16">
+    <Section id="experience">
+      <h2 className="font-heading font-medium text-3xl md:text-4xl text-ink mb-16">
         Work Experience
       </h2>
 

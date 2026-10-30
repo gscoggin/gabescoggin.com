@@ -3,7 +3,7 @@ const Section = ({ id, children, className = '', dark = false }) => {
     <section
       id={id}
       className={`py-20 md:py-28 px-4 sm:px-6 ${
-        dark ? 'bg-bg-surface' : 'bg-bg-base'
+        dark ? 'bg-bg-tint' : 'bg-bg-base'
       } ${className}`}
     >
       <div className="max-w-6xl mx-auto">

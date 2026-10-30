@@ -14,8 +14,8 @@ const contactLinks = [
 
 const Contact = () => {
   return (
-    <Section id="contact">
-      <h2 className="font-heading font-bold text-3xl md:text-4xl text-heading-warm text-center mb-4">
+    <Section id="contact" dark>
+      <h2 className="font-heading font-medium text-3xl md:text-4xl text-ink text-center mb-4">
         Get In Touch
       </h2>
       <p className="text-text-muted text-center mb-12 max-w-md mx-auto">

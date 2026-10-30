@@ -6,11 +6,11 @@ import { projects } from '../../data/projects';
 
 const Projects = () => {
   return (
-    <Section id="projects" dark>
-      <h2 className="font-heading font-bold text-3xl md:text-4xl text-heading-warm text-center mb-4">
+    <Section id="projects">
+      <h2 className="font-heading font-medium text-3xl md:text-4xl text-ink mb-4">
         Portfolio
       </h2>
-      <p className="text-text-muted text-center mb-16 max-w-lg mx-auto">
+      <p className="text-text-muted mb-16 max-w-lg">
         Active learning and side projects in software development, AI, and web technologies.
       </p>
 
@@ -18,7 +18,7 @@ const Projects = () => {
         {projects.map((project, index) => (
           <MistFade key={index} delay={Math.min(index * 60, 240)}>
             <AnimatedCard>
-              <h3 className="font-heading font-semibold text-heading-warm text-lg mb-3">
+              <h3 className="font-heading font-medium text-ink text-lg mb-3">
                 {project.title}
               </h3>
               <p className="text-text-secondary text-sm leading-relaxed mb-4">
@@ -28,7 +28,7 @@ const Projects = () => {
                 {project.tech.map((tech, i) => (
                   <span
                     key={i}
-                    className="px-2 py-1 rounded-md bg-amber-accent/10 text-amber-accent text-xs font-medium"
+                    className="px-2.5 py-1 rounded-full bg-bg-tint border border-border text-accent-deep text-xs font-medium"
                   >
                     {tech}
                   </span>
@@ -39,7 +39,7 @@ const Projects = () => {
                   href={project.github}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="inline-flex items-center gap-1.5 text-sm text-text-muted hover:text-amber-accent transition-colors"
+                  className="inline-flex items-center gap-1.5 text-sm text-text-muted hover:text-accent transition-colors"
                 >
                   <ExternalLink size={14} />
                   View on GitHub

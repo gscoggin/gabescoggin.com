@@ -1,6 +1,5 @@
 import Navbar from './components/layout/Navbar';
 import Footer from './components/layout/Footer';
-import SectionDivider from './components/ui/SectionDivider';
 import Hero from './components/sections/Hero';
 import About from './components/sections/About';
 import Experience from './components/sections/Experience';
@@ -14,12 +13,9 @@ const App = () => {
       <Navbar />
       <main>
         <Hero />
-        <SectionDivider />
         <About />
-        <SectionDivider />
         <Experience />
         <FeaturedWork />
-        <SectionDivider />
         <Projects />
         <Contact />
       </main>

@@ -1,8 +1,9 @@
 // Static stat display — intentionally no count-up animation.
-const CountUpStat = ({ end, suffix = '', label }) => {
+const CountUpStat = ({ end, prefix = '', suffix = '', label }) => {
   return (
     <div className="text-center">
       <div className="text-3xl md:text-4xl font-medium font-heading text-ink">
+        {prefix}
         {end}
         {suffix}
       </div>

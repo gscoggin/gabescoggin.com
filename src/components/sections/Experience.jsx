@@ -7,7 +7,7 @@ const Experience = () => {
   return (
     <Section id="experience">
       <h2 className="font-heading font-medium text-3xl md:text-4xl text-ink mb-16">
-        Work Experience
+        Experience
       </h2>
 
       <div className="max-w-3xl mx-auto">

@@ -19,7 +19,7 @@ const Contact = () => {
         Get In Touch
       </h2>
       <p className="text-text-muted text-center mb-12 max-w-md mx-auto">
-        Open to conversations about AI safety, technical program management, and engineering leadership.
+        Open to conversations about AI, ads, trust &amp; safety, and technology leadership.
       </p>
 
       <div className="max-w-md mx-auto space-y-3">
